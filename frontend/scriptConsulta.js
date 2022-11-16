@@ -53,8 +53,8 @@ function cadastrarConsultas()
 		console.log(error)
 		alert('Não foi possível efetuar o cadastro! :(')
 	})
-
 }
+
 
 function listar()
 {

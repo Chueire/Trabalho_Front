@@ -57,6 +57,96 @@ function cadastrarPaciente()
 	})
 }
 
+function validaNome(id)
+{
+	let divNome = document.getElementById(id)
+	if(divNome.value.trim().split(' ').length >= 2)
+	{
+		//divNome.style.border = 0
+		divNome.classList.remove('erro-input')
+		return true
+	}
+	else
+	{
+		//divNome.style.border = 'solid 1px red'
+		if(!divNome.classList.contains('erro-input'))
+		{
+			divNome.classList.add('erro-input')
+		}
+		return false
+	}
+}
+
+function validaCPF(id)
+{
+	let divCPF = document.getElementById(id)
+	{
+		if(divCPF.value.length <= 11)
+		{
+			divCPF.classList.remove('erro-input')
+			return true
+		}
+
+		else
+		{
+			if(!divCPF.classList.contains('erro-input'))
+			{
+				divCPF.classList.add('erro-input')
+			}
+		}
+	}
+}
+
+function validaIdade(id)
+{
+	let divIdade = document.getElementById(id)
+	{
+		if(divIdade.value.length <= 3)
+		{
+			divIdade.classList.remove('erro-input')
+			return true
+		}
+
+		else
+		{
+			if(!divIdade.classList.contains('erro-input'))
+			{
+				divIdade.classList.add('erro-input')
+			}
+		}
+	}
+}
+
+// function validaEmailP()
+// {
+// 	let divEmailP = document.getElementById(id)
+// 	{
+// 		var a = divEmailP.value.split(' ')
+
+// 		for(element in a)
+// 		{
+// 			if(element === '@')
+// 			{
+// 				console.log(a)
+// 				var c = c + 1
+// 			}
+// 		}
+// 		console.log(c)
+// 		if(c === 1)
+// 		{
+// 			divEmailP.classList.remove('erro-input')
+// 			return true
+// 		}
+// 		else
+// 		{
+// 			if(!divIdade.classList.contains('erro-input'))
+// 			{
+// 				divIdade.classList.add('erro-input')
+// 			}
+// 		}
+// 	}
+// }
+
 function listar()
 {
 	//da um GET no endpoint "pacientes"

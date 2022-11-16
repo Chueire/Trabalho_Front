@@ -56,6 +56,47 @@ function cadastrar()
 	})
 }
 
+function validaNome(id)
+{
+	let divNome = document.getElementById(id)
+	if(divNome.value.trim().split(' ').length >= 2)
+	{
+		//divNome.style.border = 0
+		divNome.classList.remove('erro-input')
+		return true
+	}
+	else
+	{
+		//divNome.style.border = 'solid 1px red'
+		if(!divNome.classList.contains('erro-input'))
+		{
+			divNome.classList.add('erro-input')
+		}
+		return false
+	}
+}
+
+function validaCRM(id)
+{
+	let divCRM = document.getElementById(id)
+	{
+		if(divCRM.value.length <= 6)
+		{
+			divCRM.classList.remove('erro-input')
+			return true
+		}
+
+		else
+		{
+			if(!divCRM.classList.contains('erro-input'))
+			{
+				divCRM.classList.add('erro-input')
+			}
+		}
+	}
+}
+
+
 function listar()
 {
 	fetch(url + 'medicos')

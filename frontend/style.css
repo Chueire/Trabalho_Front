@@ -46,11 +46,25 @@
 {
     /*width:100%;*/
     padding: 10px;
-	display: flex;
-    text-align: left;
+	display: block;
+    text-align: right;
     background: #062a6b;
     color: white;
     font-size: 10px;
+}
+
+.inner_header
+{
+	height: 100%;
+	display: flex;
+	/* text-align: center; */
+}
+
+.logo_container
+{
+	height: 100%;
+	display: table;
+	float: right;
 }
 
 .erro-input

@@ -13,15 +13,20 @@
             <p>Ir para <a href="cadastrarPaciente.html">Cadastro de Pacientes</a> </p>
             <p>Ir para <a href="cadastrarConsultas.html">Cadastro de Consultas</a></p>
         </h1>
+        <div class="inner_header">
+            <h1>
+                <P>CADRASTRO DE MÉDICOS</P>
+            </h1>
+        </div>
     </div>
 </head>
 <body>
     <div class="form">
-        <input id="nome-completo"   placeholder="Nome Completo"      type="text"/>
-        <input id="crm"             placeholder="CRM"                type="number"/>
+        <input id="nome-completo"   placeholder="Nome Completo"      type="text"        onblur="validaNome(this.id)"/>
+        <input id="crm"             placeholder="CRM"                type="text"        onblur="validaCRM(this.id)"/>    
         <input id="areaAtuacao"     placeholder="Área de atuação"    type="text"/>
         <input id="emailM"          placeholder="Email"              type="text"/>
-        <input id="telefoneM"       placeholder="Telefone"           type="number"/>
+        <input id="telefoneM"       placeholder="Telefone"           type="text"/>
         <button onclick="cadastrar()">Cadastrar Médico</button>
         <p>Ir para <a href="listar.html">Lista de Médicos Cadastrados</a></p>
     <div>
