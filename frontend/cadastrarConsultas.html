@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 2 - Programação Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptConsulta.js"></script>
+
+    <div class="header">
+        <h1>
+            <p>Ir para <a href="cadastrarPaciente.html">Cadastro de Pacientes</a> </p>
+            <p>Ir para <a href="cadastrar.html">Cadastro de Médicos</a></p>
+        </h1>
+    </div>
+</head>
+<body>
+    <div class="form">
+        <input id="crm-medico"         placeholder="CRM do Médico"       type="text"/>
+        <input id="cpf-paciente"       placeholder="CPF do Paciente"     type="text"/>
+        <input id="data"                placeholder="Data"                          type="text"/>
+        <input id="horario"             placeholder="Informe a horario"             type="text"/>
+        <input id="tipo"                placeholder="Informe a Especialidade"       type="text"/>
+        <button onclick="cadastrarConsultas()">Cadastrar Consulta</button>
+        <p>Ir para <a href="listarConsultas.html">Lista de Consultas Cadastradas</a></p>
+    </div>   
+</body>
+</html>

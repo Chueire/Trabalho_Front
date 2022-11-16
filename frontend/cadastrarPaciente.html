@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 2 - Programação Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptPaciente.js"></script>
+
+    <div class="header">
+        <h1>
+            <p>Ir para <a href="cadastrar.html">Cadastro de Médicos</a></p>
+            <p>Ir para <a href="cadastrarConsultas.html">Cadastro de Consultas</a></p>
+        </h1>
+    </div>
+</head>
+<body>
+    <div class="form">
+        <input id="nome-paciente"   placeholder="Nome Completo"     type="text"/>
+        <input id="cpfp"            placeholder="CPF"               type="text"/>
+        <input id="idadep"          placeholder="Idade"             type="text"/>
+        <input id="sexop"           placeholder="Informe o Sexo"    type="text"/>
+        <input id="validaEmailP"    placeholder="Email"             type="text"/>
+        <input id="validaTelefoneP" placeholder="Telefone"          type="text"/>
+        <button onclick="cadastrarPaciente()">Cadastrar</button>
+        <p>Ir para <a href="listarPaciente.html">Lista de Pacientes Cadastrados</a></p>
+    </div>
+    
+</body>
+</html>
