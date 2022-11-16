@@ -175,7 +175,7 @@ function atualizar(id, divNome, divNomeP, divData, divHora, divTipo)
 	.then((output) =>
 	{
 		listar()
-		console.log(output)
+		
 		alert('Consulta Atualizada')
 	})
 	.catch((error) =>
